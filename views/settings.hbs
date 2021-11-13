@@ -1,0 +1,14 @@
+<div id="css_container">
+    <div id="css_title">CSS Editor
+        <button id="restore_btn" onclick="restore()">Restore base CSS</button>
+    </div>
+
+    <form action="/valid" method="post" id="css">
+        <textarea name="css_file" id="css_file"></textarea>
+        <textarea name="css_lines" id="css_lines"></textarea>
+        <button class="css_btn" id="valid"><input type="submit" id="valid_btn" value="Valid" /></button>
+        <button class="css_btn" id="cancel"><a href="/cancel" id="cancel_btn">Cancel</a></button>
+    </form>
+</div>
+
+<script src="css.js"></script>

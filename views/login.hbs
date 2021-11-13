@@ -1,0 +1,23 @@
+<form action="/login" method="post" id="panel">
+    <div id="texture"></div>
+    <div>
+        {{!-- {{#if error}}
+        <p class="err-msg">Username or password is incorrect</p>
+        {{/if }} --}}
+        <h1>Batisys</h1>
+    </div>
+    <div class="form-group">
+        <label>Identifiant:</label>
+        <input type="text" name="username" id="username" placeholder="Entrez votre identifiant" required />
+    </div>
+    <div class="form-group">
+        <label>Mot de passe:</label>
+        <input type="password" name="password" id="password" placeholder="Entrez votre mot de passe" required />
+    </div>
+    <div>
+        <input type="submit" value="connexion" />
+    </div>
+    <a href="/register" id="register">Inscription</a>
+</form>
+
+<script src="login.js"></script>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Rokkitt:wght@100;200;300;400;500;600;700;800&family=Cinzel:wght@400;500;900&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="jquery-3.6.0.js"></script>
+    <script src="smtp.js"></script>
+    <script src="jspdf.debug.js"></script>
+    <script src="FileSaver.js"></script>
+    <script src="dom-to-image.min.js"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="menu">
+            <div class="app_name"><a href="/" id="index">⚛ Batisys</a></div>
+            <button class="menu_btn" id="btn_1">☰ Clients<label>˅</label></button>
+            <div class="content" id="c1">
+                <button class="content_btn">⚬ Fichier client</button></br>
+                <button class="content_btn"><a href="/new_client" id="new_client">⚬ Nouveau client</a></button>
+            </div>
+            <button class="menu_btn" id="btn_2">☰ Devis<label>˅</label></button>
+            <div class="content" id="c2">
+                <button class="content_btn">⚬ Devis existants</button></br>
+                <button class="content_btn"><a href="/new_estimate" id="new_estimate">⚬ Nouveau devis</a></button>
+            </div>
+            <button class="menu_btn" id="btn_3">☰ Factures<label>˅</label></button>
+            <div class="content" id="c3">
+                <button class="content_btn">⚬ Consulter</button></br>
+                <button class="content_btn">⚬ Editer</button>
+            </div>
+            <button class="menu_btn" id="btn_4">☰ Fiches d'intervention<label>˅</label></button>
+            <div class="content" id="c4">
+                <button class="content_btn">⚬ Consulter</button></br>
+                <button class="content_btn">⚬ Editer</button>
+            </div>
+            <button class="menu_btn" id="btn_5">☰ Rendez-vous<label>˅</label></button>
+            <div class="content" id="c5">
+                <button class="content_btn">⚬ Passés</button></br>
+                <button class="content_btn">⚬ À venir</button>
+            </div>
+            <button class="menu_btn" id="btn_6">☰ Inventaire<label>˅</label></button>
+            <div class="content" id="c6">
+                <button class="content_btn">⚬ Consulter</button></br>
+                <button class="content_btn">⚬ Editer</button>
+            </div>
+            <button class="menu_btn" id="btn_7">☰ Catalogue<label>˅</label></button>
+            <div class="content" id="c7">
+                <button class="content_btn">⚬ Consulter</button></br>
+                <button class="content_btn">⚬ Editer</button>
+            </div>
+            <button class="menu_btn">☰ Statistiques<label>˅</label></button>
+
+
+            <div id="footer">
+                <button id="help">Aide</button>
+                <button id="contact" onclick="contact()">Contact</button>
+                <a href="/settings" id="settings">Paramètres</a>
+                <a href="/logout" id="logout">Déconnexion</a>
+            </div>
+        </div>
+
+        {{{ body }}}
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
